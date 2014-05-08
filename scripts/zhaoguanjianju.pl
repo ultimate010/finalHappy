@@ -16,6 +16,9 @@ open OUT, ">$ARGV[1]";
 open OUT1, ">$ARGV[2]";
 while(my $line = <IN>){
     chomp $line;
+    $line=~s~^\s+~~;
+    $line=~s~\s+$~~;
+    $line=~s~\s+~ ~g;
     if($line=~/$words1/){
         print OUT "$line\n";
     }
