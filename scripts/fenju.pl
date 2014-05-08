@@ -5,7 +5,7 @@ use utf8;
 use open ":encoding(utf8)", ":std";
 my %fenge;
 if(@ARGV != 2){
-    die "Usage :$0 input_file out_file\n";
+    die "Usage(utf8):$0 input_file out_file\n";
 }
 open IN, "$ARGV[0]";
 open OUT, ">$ARGV[1]";

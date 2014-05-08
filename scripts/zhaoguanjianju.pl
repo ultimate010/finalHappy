@@ -8,7 +8,7 @@ my $words1 ="突然";
 my $words2 ="忽然";
 
 if(@ARGV != 3){
-    die "Usage :$0 input_file out_file out_file2\n";
+    die "Usage(utf8):$0 input_file out_file out_file2\n";
 }
 
 open IN, "$ARGV[0]";
